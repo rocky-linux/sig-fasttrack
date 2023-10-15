@@ -10,3 +10,7 @@
 ## Continuous Integration / Continuous Deployment
 
 Actions Runner executes workflow to publish to https://sig-fasttrack.rocky.page on push to main.
+
+## Local testing
+
+A Dockerfile and docker-compose are included for local testing.  "docker-compose up"  (or "podman-compose up") should be enough to launch this wiki locally.  Point your browser to http://localhost:8000 to view.

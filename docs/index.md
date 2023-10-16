@@ -32,11 +32,12 @@ Outside of these guidelines, package contributions should always be welcome!
 
 ## Links
 
-- **SIG-FastTrack Wiki: **  https://sig-fasttrack.rocky.page/
-- **MatterMost Channel: ** https://chat.rockylinux.org/rocky-linux/channels/sig-fasttrack
-- **FastTrack Git Group: ** https://git.resf.org/sig_fasttrack/  (New package requests can be in meta/, wiki source under wiki/ )
-- **FastTrack Package Sources: ** https://git.rockylinux.org/sig/fasttrack/
-- 
+- **SIG-FastTrack Wiki:**  [https://sig-fasttrack.rocky.page/](https://sig-fasttrack.rocky.page/)
+- **MatterMost Chat Channel:** [https://chat.rockylinux.org/rocky-linux/channels/sig-fasttrack](https://chat.rockylinux.org/rocky-linux/channels/sig-fasttrack)
+- **FastTrack Git Group:** [https://git.resf.org/sig_fasttrack/](https://git.resf.org/sig_fasttrack/)  (New package requests can be in meta/, wiki source under wiki/ )
+- **FastTrack Package Sources:** [https://git.rockylinux.org/sig/fasttrack/](https://git.rockylinux.org/sig/fasttrack/)
+- **Peridot RPM Build System:** [https://peridot.build.resf.org/](https://peridot.build.resf.org/)
+
 
 ## Responsibilities
 

@@ -15,9 +15,11 @@
       
       
       
+        <link rel="next" href="package_list/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
     
     
       
@@ -25,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.bd3936ea.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.35e1ed30.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.356b1318.min.css">
@@ -299,6 +301,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#a-package-bazaar-not-a-package-cathedral" class="md-nav__link">
+    A Package Bazaar, not a Package Cathedral
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#philosophy" class="md-nav__link">
+    Philosophy
+  </a>
+  
+    <nav class="md-nav" aria-label="Philosophy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reasons-for-fasttrack-package-rejection" class="md-nav__link">
+    Reasons for FastTrack Package Rejection:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     Links
   </a>
@@ -341,6 +370,124 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="package_list/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Package list
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Package list
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="repositories/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Repositories
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Repositories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -365,14 +512,35 @@
 
 
 <h1 id="sigfasttrack-wiki">SIG/FastTrack Wiki<a class="headerlink" href="#sigfasttrack-wiki" title="Permanent link">&para;</a></h1>
-<p>FastTrack, as an ode to a past CentOS repository of a similar name, is a SIG to attempt to provide the following:</p>
+<h2 id="a-package-bazaar-not-a-package-cathedral">A Package Bazaar, not a Package Cathedral<a class="headerlink" href="#a-package-bazaar-not-a-package-cathedral" title="Permanent link">&para;</a></h2>
+<p>FastTrack, as an ode to a past CentOS repository of a similar name, is a SIG that attempts to provide:</p>
 <ul>
-<li>Fixes, customizations, improvements to packages that the community would like to see</li>
-<li>This also includes doing backports of patches that may not be released by our upstreams to address any type of bugs</li>
-<li>Potential packages that could potentially make it to CentOS Stream or EPEL</li>
-<li>Newer versions of software that override the base repositories that would likely never land in RHEL, CentOS Stream, or EPEL</li>
+<li>Fixes, customizations, upgrades, and improvements to existing Rocky packages that the community would like to see</li>
+<li>Backports of patches that may not be released by our upstreams (RHEL, CentOS Stream, or even Fedora) to address bugs or functionality</li>
+<li>New original packages for Rocky.  It's possible new ones could eventually make it into CentOS Stream or EPEL.</li>
+<li>Newer major versions of software that override the base Rocky repositories - even versions so new they will likely never land in RHEL, CentOS Stream, or EPEL</li>
 </ul>
+<h2 id="philosophy">Philosophy<a class="headerlink" href="#philosophy" title="Permanent link">&para;</a></h2>
+<p>The goal is to have a place in the Rocky project where experimental new packages and updates to existing ones can be published.  Philosophically, this SIG should be wide open to contributions, with much less rigor or vetting than repositories such as EPEL. Newer versions of existing Rocky Linux packages, as well as brand new packages are both welcome.  <em><em>We don't need reasons to add a package, we need reasons to </em>not</em> add it.</p>
+<p>Having said that, we can't have absolute anarchy. There must be some kind of a guideline to what can and cannot be accepted.</p>
+<h3 id="reasons-for-fasttrack-package-rejection">Reasons for FastTrack Package Rejection:<a class="headerlink" href="#reasons-for-fasttrack-package-rejection" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Broken dependencies:</strong>  <code>dnf repoclosure</code> must succeed on publication.  If some packages are not installable under default Rocky Linux, we cannot include the package until that's fixed</li>
+<li><strong>Malicious or severe security risk:</strong>  We should not publish anything that presents a severe security risk to the user (think remotely-exploitable-by-default code).</li>
+<li><strong>Changes a core package in a questionable way:</strong> Related to the security risk issue.  We cannot override <code>openssl</code> or <code>glibc</code> with questionable behavior or API updates.  "Core" is in the eye of the beholder, but generally we want FastTrack users to continue using the solid Rocky Linux base.</li>
+<li><strong>We don't have permssion to redistribute:</strong> Self-explanatory.  Contributions don't necessarily have to be 100% open source, but the Rocky project cannot and will not host copyrighted, non-redistributable content.</li>
+<li><strong>It already exists in EPEL, RPMFusion, or another 3rd-party repo</strong>:  The intention of this SIG is to provide as much "new and cool" stuff to Rocky Linux users as possible. If people can already get software from one of the popular 3rd-party repos, that's probably the best place to go.  An exception to this is when dependencies are needed that already exist in another repo, that are needed to build the new package we want.</li>
+<li><strong>Package clearly belongs in another SIG:</strong> The goal of this SIG is to be a "catchall" for desirable new packages or updates. However, many times a package clearly doesn't belong in FastTrack, but in another SIG already set up for that purpose. Enhanced kernels should probably go in SIG/Kernel, embedded or single-board specific packages should go in SIG/AltArch, etc.</li>
+</ul>
+<p>Outside of these guidelines, package contributions should always be welcome!</p>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>SIG-FastTrack Wiki:</strong>  <a href="https://sig-fasttrack.rocky.page/">https://sig-fasttrack.rocky.page/</a></li>
+<li><strong>MatterMost Chat Channel:</strong> <a href="https://chat.rockylinux.org/rocky-linux/channels/sig-fasttrack">https://chat.rockylinux.org/rocky-linux/channels/sig-fasttrack</a></li>
+<li><strong>FastTrack Git Group:</strong> <a href="https://git.resf.org/sig_fasttrack/">https://git.resf.org/sig_fasttrack/</a>  (New package requests can be in meta/, wiki source under wiki/ )</li>
+<li><strong>FastTrack Package Sources:</strong> <a href="https://git.rockylinux.org/sig/fasttrack/">https://git.rockylinux.org/sig/fasttrack/</a></li>
+<li><strong>Peridot RPM Build System:</strong> <a href="https://peridot.build.resf.org/">https://peridot.build.resf.org/</a></li>
+</ul>
 <h2 id="responsibilities">Responsibilities<a class="headerlink" href="#responsibilities" title="Permanent link">&para;</a></h2>
 <h2 id="meetings-communications">Meetings / Communications<a class="headerlink" href="#meetings-communications" title="Permanent link">&para;</a></h2>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
@@ -388,7 +556,7 @@ docs/
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 16, 2023</span>
       
     
   </small>
@@ -444,7 +612,7 @@ docs/
     <script id="__config" type="application/json">{"base": ".", "features": ["navigation.expand", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.top", "navigation.tracking", "navigation.path", "search.highlight", "search.suggest", "toc.integrate", "content.action.edit"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.94c44541.min.js"></script>
+      <script src="assets/javascripts/bundle.aecac24b.min.js"></script>
       
     
   </body>
